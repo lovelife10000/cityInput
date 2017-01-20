@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>城市三级联动 - citys</title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery.citys.js"></script>
+</head>
+
+<body>
+	<div class="citys">
+	    <select name="province"></select>
+	    <select name="city"></select>
+	    <select name="area"></select>
+	</div>
+<script type="text/javascript">
+	$('.citys').citys({dataUrl:'http://192.168.0.126/js/citys.json',province:'福建',city:'厦门',area:'思明'});
+</script>
+</body>
+
+<html>

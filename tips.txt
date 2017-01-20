@@ -1,0 +1,18 @@
+$('.citys').citys({dataUrl:'',province:'福建',city:'厦门',area:'思明'});
+调用方法：
+
+$(selector).citys(options);
+
+options参数
+
+参数	默认值	说明
+dataUrl	'citys.json'	数据库地址 (最新数据:2016年5月)
+provinceField	'province'	省份字段名
+cityField	'city'	城市字段名
+areaField	'area'	地区字段名
+province	[无]	省份,可以为地区编码或者名称
+city	[无]	城市,可以为地区编码或者名称
+area	[无]	地区,可以为地区编码或者名称
+required	true	是否必须选一个
+nodata	'hidden'	当无数据时的表现形式
+onChange	[无]	地区切换时触发,回调函数传入地区数据
